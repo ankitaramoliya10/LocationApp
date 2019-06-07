@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.viprak.locationapp">
+    package="com.ndroid.locationapp">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -8,6 +8,7 @@
     <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
     <uses-permission android:name="android.permission.CONTROL_LOCATION_UPDATES" />
     <uses-permission android:name="android.permission.INSTALL_LOCATION_PROVIDER" />
+
     <uses-feature android:name="android.hardware.location.gps" />
 
     <application
@@ -17,7 +18,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.ndroid.locationapp.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,7 +26,7 @@
             </intent-filter>
         </activity>
         <service
-            android:name=".LocationService"
+            android:name="com.ndroid.locationapp.LocationService"
             android:enabled="true" />
         <!--android:permission="android.permission.BIND_JOB_SERVICE"-->
     </application>

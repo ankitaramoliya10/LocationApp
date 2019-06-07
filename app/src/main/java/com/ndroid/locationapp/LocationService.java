@@ -1,4 +1,4 @@
-package com.viprak.locationapp;
+package com.ndroid.locationapp;
 
 import android.app.Service;
 import android.content.Intent;
